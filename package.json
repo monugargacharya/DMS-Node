@@ -1,0 +1,41 @@
+{
+  "name": "DMS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manvendra/Rahul",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "coupon-code": "^0.4.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "google-auth-library": "^9.15.0",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.2",
+    "log4js": "^6.4.5",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.45",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.10.1",
+    "mysql8": "^2.17.3",
+    "node-schedule": "^2.1.1",
+    "nodemailer": "^6.9.13",
+    "passport": "^0.7.0",
+    "passport-google-oauth20": "^2.0.0",
+    "path": "^0.12.7",
+    "to-words": "^3.6.1",
+    "uuid": "^10.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "nodemon": "^3.1.3"
+  }
+}

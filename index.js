@@ -26,6 +26,6 @@ app.use(function (req, res, next) {
 app.use(route)
 
 let server = http.createServer(app);
-server.listen(process.env.SPort, ()=>{
+server.listen(process.env.SPort, '0.0.0.0', ()=>{
   console.log('Server is running On this Port '+process.env.SPort);
 })

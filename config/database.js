@@ -1,13 +1,16 @@
-const sql = require('mysql2');
+const sql = require("mysql2");
+require("dotenv").config();
 
 const conn = sql.createPool({
-    host: '134.255.182.27',
-    user: 'manav',
-    password: 'ManavPass@2025',
-    database: 'dms_shree_ram_pharma',
-    connectionLimit: 100,
-    port:3306,
-    multipleStatements: true
+  connectionLimit: 50,
+  queueLimit: 500,
+  host: process.env.DBhost,
+  user: process.env.DBuser,
+  password: process.env.DBpassword,
+  database: process.env.DBdatabase,
+  port: process.env.DBport,
+  multipleStatements: true,
+  connectTimeout: 60 * 60 * 1000,
 });
 
 module.exports = conn;
